@@ -1,0 +1,237 @@
+html {
+    font-size: 20px;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    background-color: hsl(30,67%,94%);
+}
+
+.navbar {
+    height: 2rem;
+    width: 100%;
+    color:white;
+    background-color: hsl(19,13%,60%);
+    text-align: left;
+    font-family: 'Bad Script', cursive;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: .4rem 2rem;
+    font-size: 1rem;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+.main-img .title {
+    font-size: 8rem;
+    font-family: 'Bad Script', cursive;
+    color: white;
+    text-align: center;
+    position: relative;
+    top: 14rem;
+    vertical-align: middle;
+}
+
+.main-img {
+    background-image: url("https://images.unsplash.com/photo-1527824404775-dce343118ebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.sub-header {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-family: 'Bad Script', cursive;
+}
+
+.sections {
+    display: inline-block;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+    background-color: hsl(30,55%,90%);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.button {
+    color: white;
+    background-color: hsl(19,13%,46%);
+    height: 45px;
+    width: 120px;
+    border-radius: 20px;
+    margin-top: 20px;
+    box-shadow: 3px 2px 5px grey;
+}
+
+.trails, .image, .mobile-image {
+    display: inline-block;
+    width: 40%;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.mobile-image {
+    display: none;
+}
+
+article h3 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+article p {
+    font-size: .95rem;
+}
+
+.date {
+    font-style: italic;
+}
+
+.email {
+    border: 1px black solid;
+    height: 28px;
+    font-size: .8rem;
+    background-color: hsl(60,27%,94%);
+}
+
+.email-container {
+    margin: 20px 0px 0px 0px;
+}
+
+.footer {
+    display: block;
+    color: white;
+    background-color: hsl(19,13%,46%);
+    height: 120px;
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0;
+    position: relative;
+}
+
+.footer li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 45px 50px;
+    font-size: 1.5rem;
+    font-family: 'Bad Script', cursive;
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar li {
+        margin: .5rem 1.5rem;
+    }
+    
+    .trails, .image {
+        width: 95%;
+    }
+    
+    .image {
+        display: none;
+    }
+    
+    .mobile-image {
+        display: inline-block;
+        width: 95%;
+    }
+    
+    .footer li {
+        margin: 45px 2%;
+        font-size: 1.5rem;
+    }
+    
+}
+
+@media only screen and (max-width: 480px) {
+    .navbar li {
+        display: inline-block;
+        margin: .65rem .5rem;
+        font-size: .75rem;
+    }
+    
+    .main-img .title {
+        font-size: 4rem;
+        top: 10rem;
+    }
+    
+    .main-img {
+        height: 30rem;
+    }
+    
+    main {
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .sub-header {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-family: 'Bad Script', cursive;
+    }
+    
+    .image, .trails {
+        width: 90%;
+        
+    }
+    
+    .sections, p {
+        border-radius: 0px;
+        font-size: .75rem;
+    }
+   
+    article p {
+        font-size: .75rem;
+    }
+    
+    .join-us .sub-header {
+        margin-bottom: .8rem;
+    }
+    
+    .footer {
+        height: 120px;
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .footer li {
+        margin: 45px 2%;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .footer {
+        display: block;
+        color: white;
+        background-color: hsl(19,13%,46%);
+        height: 100px;
+        width: 100%;
+        margin-top: 2rem;
+        padding: 0;
+        position:relative;
+    }
+    
+    .footer li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 45px 5px;
+        line-height: 10px;
+        font-size: .85rem;
+        font-family: 'Bad Script', cursive;
+    }
+
+}
